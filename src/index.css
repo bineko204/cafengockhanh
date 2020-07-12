@@ -1,0 +1,217 @@
+html {
+    font-size: 16px;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: unset;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.ck.ck-editor__main > .ck-editor__editable {
+    min-height: 400px;
+}
+/* * {
+    font-family: "Paytone One";
+} */
+.nav-active {
+    color: #874d34 !important;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+a.disabled-link {
+    pointer-events: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.container {
+    max-width: 1400px;
+}
+button {
+    border: none !important;
+    outline: none !important;
+}
+li {
+    display: block;
+}
+#img {
+    border: 1px solid #d3d3d3;
+}
+img {
+    max-width: 100%;
+}
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+    background: #fff;
+    padding: 0 10px;
+}
+.MuiNativeSelect-outlined.MuiNativeSelect-outlined {
+    padding-left: 15px;
+}
+.active > div {
+    background: #f9efef;
+}
+.no-padding.row,
+.no-padding.container,
+.no-padding.container-fluid {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.no-padding > [class^='col-'] {
+    padding-left: 0;
+    padding-right: 0;
+}
+.imgSelected {
+    position: relative;
+}
+.imgSelected::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 0 3px #1e8cbe;
+    overflow: hidden;
+}
+.imgSelected::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f058';
+    font-weight: 700;
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 3;
+    color: #1e8cbe;
+}
+.overflow-scroll {
+    overflow: scroll !important;
+    height: 100%;
+}
+.fontsize-large {
+    font-size: 22px;
+    margin-left: 5px;
+}
+section:not(#slider) {
+    padding: 60px 0;
+}
+/* scrollbar custom */
+.custom-scroll::-webkit-scrollbar {
+    background-color: #fafafa;
+    width: 16px;
+}
+
+/* background of the scrollbar except button or resizer */
+.custom-scroll::-webkit-scrollbar-track {
+    background-color: #fafafa;
+}
+
+/* scrollbar itself */
+.custom-scroll::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+    border: 4px solid #fafafa;
+}
+.custom-scroll::-webkit-scrollbar-button {
+    display: none;
+}
+/* ========== */
+/* scrollbar custom */
+body::-webkit-scrollbar {
+    background-color: #fafafa;
+    width: 16px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+    background-color: #fafafa;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+    border: 4px solid #fafafa;
+}
+body::-webkit-scrollbar-button {
+    display: none;
+}
+/* ========== */
+.spin {
+    animation: spin 4s linear infinite;
+}
+.pointer-event-none {
+    pointer-events: none;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.fullScreen {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.hideElm {
+    flex: 0 0 0%;
+    max-width: 0%;
+}
+@keyframes glowing {
+    0% {
+        background-color: #f00000;
+        box-shadow: 0 0 3px #f00000;
+    }
+    50% {
+        background-color: #b90909;
+        box-shadow: 0 0 10px #b90909;
+    }
+    100% {
+        background-color: #ff0000;
+        box-shadow: 0 0 3px #f00000;
+    }
+}
+.call-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 99;
+}
+.call-btn img {
+    width: 40px;
+    height: 40px;
+    animation: zoom 1s infinite;
+}
+.call-btn span {
+    padding: 5px 10px;
+    color: #fff;
+    background: rgb(33, 150, 243);
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+        0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.text-transform-uppercase {
+    text-transform: uppercase;
+}
